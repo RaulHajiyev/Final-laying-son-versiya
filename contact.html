@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - SmartJob</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container">
+        <div class="row">
+          <a class="brand" href="index.html"><span>SmartJob</span></a>
+          <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a class="active" href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h2 class="section-title">Application / Contact</h2>
+
+        <form id="contactForm" class="card pad" novalidate>
+          <div style="display: grid; gap: 10px">
+            <div>
+              <label class="note" for="jobInput">Selected job</label>
+              <input
+                id="jobInput"
+                class="field"
+                placeholder="Job will appear here..."
+                readonly
+              />
+            </div>
+
+            <div style="display: grid; gap: 10px">
+              <div>
+                <label class="note" for="nameInput">Your name</label>
+                <input
+                  id="nameInput"
+                  class="field"
+                  placeholder="Enter your full name"
+                />
+              </div>
+
+              <div>
+                <label class="note" for="emailInput">Email</label>
+                <input
+                  id="emailInput"
+                  class="field"
+                  placeholder="name@example.com"
+                />
+              </div>
+
+              <div>
+                <label class="note" for="messageInput">Message</label>
+                <textarea
+                  id="messageInput"
+                  class="field"
+                  rows="5"
+                  placeholder="Tell us about your experience..."
+                ></textarea>
+              </div>
+            </div>
+
+            <button class="btn" type="submit">Send</button>
+            <div id="formStatus" class="alert" style="display: none"></div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> SmartJob</div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(
+        new Date().getFullYear()
+      );
+    </script>
+    <script type="module" src="js/contact.js"></script>
+  </body>
+</html>

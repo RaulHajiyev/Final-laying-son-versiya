@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartJob - Find Your Next Role</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container">
+        <div class="row">
+          <a class="brand" href="index.html">
+            <span>SmartJob</span>
+          </a>
+          <nav class="menu">
+            <a class="active" href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            
+            <div class="card pad">
+              <h1 class="h1">Find your next role with confidence.</h1>
+              <p class="p">
+                Explore curated job listings, filter by your preferences. A clean and fast
+                experience from search to application.
+              </p>
+
+              <div class="actions">
+                <a class="btn" href="jobs.html">Browse jobs</a>
+                <a class="btn secondary" href="contact.html">Contact</a>
+              </div>
+
+              <hr class="sep" />
+
+              <div class="meta">
+                <span class="tag">Search & Filter</span>
+                <span class="tag">Job Details</span>
+                <span class="tag">Responsive UI</span>
+              </div>
+            </div>
+
+            
+            <div class="card pad">
+              <h2 class="section-title">Project highlights</h2>
+
+              <div class="grid3">
+                <div class="card mini">
+                  <h3>Smart discovery</h3>
+                  <p>Find roles faster with search, filters, and sorting.</p>
+                </div>
+
+                <div class="card mini">
+                  <h3>Clean experience</h3>
+                  <p>Loading, error, and empty states handled properly.</p>
+                </div>
+              </div>
+
+              <hr class="sep" />
+
+              <p class="note">
+                Tip: Open the Jobs page and try filtering by category and work
+                type.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section">
+        <div class="container">
+          <div class="card pad">
+            <h2 class="section-title">How it works</h2>
+            <div class="grid3">
+              <div class="card mini">
+                <h3>1) Browse</h3>
+                <p>Explore job listings and open details.</p>
+              </div>
+              <div class="card mini">
+                <h3>2) Apply</h3>
+                <p>Contact us to start your application.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div>© <span id="year"></span> SmartJob</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(
+        new Date().getFullYear()
+      );
+    </script>
+  </body>
+</html>

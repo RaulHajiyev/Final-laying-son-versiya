@@ -1,0 +1,22 @@
+@media (max-width: 980px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .jobs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .jobs-grid {
+    grid-template-columns: 1fr;
+  }
+  .field {
+    min-width: 100%;
+  }
+  .menu {
+    gap: 6px;
+  }
+}

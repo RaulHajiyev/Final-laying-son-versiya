@@ -1,0 +1,242 @@
+:root {
+  --bg: #0b1220;
+  --card: #111a2e;
+  --text: #e7ecf5;
+  --muted: #a9b4cc;
+  --accent: #5dd6c1;
+  --danger: #ff6b6b;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --max: 1100px;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg), #070c18);
+  color: var(--text);
+}
+
+.container {
+  width: min(var(--max), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(10, 16, 32, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.nav .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+.badge {
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.menu {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.menu a {
+  color: var(--muted);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.menu a.active,
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+}
+
+.hero {
+  padding: 44px 0 26px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  align-items: stretch;
+}
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.card.pad {
+  padding: 18px;
+}
+.h1 {
+  font-size: 42px;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+.p {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, var(--accent), #7aa7ff);
+  color: #081021;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}
+.btn.secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.section {
+  padding: 18px 0 32px;
+}
+.section-title {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.mini {
+  padding: 14px;
+}
+.mini h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+.mini p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.field {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: var(--text);
+  min-width: 220px;
+}
+.select {
+  min-width: 180px;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+.job {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.job-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.job h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.meta {
+  color: var(--muted);
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  color: var(--muted);
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+.icon-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer {
+  padding: 26px 0 40px;
+  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  margin-top: 30px;
+}
+hr.sep {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  margin: 14px 0;
+}
+
+.alert {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+}
+.alert.danger {
+  border-color: rgba(255, 107, 107, 0.35);
+  color: #ffd0d0;
+}

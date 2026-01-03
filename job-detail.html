@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Job Details - SmartJob</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container">
+        <div class="row">
+          <a class="brand" href="index.html"><span>SmartJob</span></a>
+          <nav class="menu">
+            <a href="index.html">Home</a>
+            <a class="active" href="jobs.html">Jobs</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <a class="tag" href="jobs.html">← Back to Jobs</a>
+
+        <div id="detailBox" class="card pad" style="margin-top: 12px"></div>
+        <div
+          id="detailStatus"
+          class="alert"
+          style="margin-top: 12px; display: none"
+        ></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span id="year"></span> SmartJob</div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(
+        new Date().getFullYear()
+      );
+    </script>
+    <script type="module" src="js/jobDetail.js"></script>
+  </body>
+</html>
